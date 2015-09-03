@@ -9,26 +9,26 @@
   "welcome 5, meet 1, 2, 3 and 4" */
 
 
-var numbersInOrder; 
-var warmWelcome; 
-var numberHereNow = 1; 
+var numbersInOrder;
+var warmWelcome;
+var numberHereNow = 1;
 var partyNumbers = 5;
 
-while (numberHereNow <= partyNumbers){
-  numbersInOrder = 1; 
-  warmWelcome = 'Welcome ' + numberHereNow;
+while (numberHereNow <= partyNumbers) {
+    numbersInOrder = 1;
+    warmWelcome = 'Welcome ' + numberHereNow;
 
-  if (numberHereNow > 1) {
-    warmWelcome += ', meet ' + numbersInOrder;
+    if (numberHereNow > 1) {
+        warmWelcome += ', meet ' + numbersInOrder;
 
-    while (++numbersInOrder < numberHereNow ) {
-      if (numbersInOrder !== numberHereNow - 1) {
-        warmWelcome += ', ' + numbersInOrder;
-      } else {
-        warmWelcome += ' and ' + numbersInOrder;
-      }
+        while (++numbersInOrder < numberHereNow) {
+            if (numbersInOrder !== numberHereNow - 1) {
+                warmWelcome += ', ' + numbersInOrder;
+            } else {
+                warmWelcome += ' and ' + numbersInOrder;
+            }
+        }
     }
-  }
-  numberHereNow++;
-  console.log(warmWelcome);
+    numberHereNow++;
+    console.log(warmWelcome);
 }
